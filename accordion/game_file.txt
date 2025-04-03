@@ -1,32 +1,11 @@
-game accordian start
+game accordion start
 
     #use "deck"
 
     shuffle deck
     stacklist row[20]
     
-    setup start
-        ; deck -> row[0] top 1
-        ; deck -> row[1] top 1
-        ; deck -> row[2] top 1
-        ; deck -> row[3] top 1
-        ; deck -> row[4] top 1
-        ; deck -> row[5] top 1
-        ; deck -> row[6] top 1
-        ; deck -> row[7] top 1
-        ; deck -> row[8] top 1
-        ; deck -> row[9] top 1
-        ; deck -> row[10] top 1
-        ; deck -> row[11] top 1
-        ; deck -> row[12] top 1
-        ; deck -> row[13] top 1
-        ; deck -> row[14] top 1
-        ; deck -> row[15] top 1
-        ; deck -> row[16] top 1
-        ; deck -> row[17] top 1
-        ; deck -> row[18] top 1
-        ; deck -> row[19] top 1
-    end
+    setup start end
 
     turn start
 
