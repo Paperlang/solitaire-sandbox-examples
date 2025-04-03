@@ -1,0 +1,53 @@
+game blackjack start
+
+  #use "deck"
+
+  hiddenstack dealerHidden
+  visiblestack dealerRevealed
+  visiblestack hand
+
+  card Hit start end
+  card Stick start end
+
+  visiblestack hitstack
+  visiblestack stickstack
+
+  place Hit -> hitstack 1
+  place Stick -> stickstack 1
+
+  shuffle deck
+
+  setup start
+    deck -> dealerRevealed top 1
+    deck -> hand top 1
+  end
+
+  int playerScore
+  int dealerScore
+
+  turn start
+    dealerScore = dealerRevealed{v} + dealerHidden{v}
+    playerScore = hand{v}
+    
+    pickone start
+      pick hitstack -> hitstack top 0 then
+        deck -> hand top 1
+        deck -> dealerHidden top 1
+      pick stickstack -> stickstack top 0 then
+        dealerHidden /> dealerRevealed top all
+
+        if dealerScore > 21 start
+          winneris currentPlayer
+        elseif (21 - playerScore) < (21 - dealerScore) then
+          winneris currentPlayer
+        else
+          looseris currentPlayer
+        end
+    end
+
+    if hand{v} > 21 start
+      looseris currentPlayer
+    end
+
+  end
+end

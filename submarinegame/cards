@@ -1,0 +1,38 @@
+card power start
+    int l
+end
+
+card power0 power start
+    l = 1
+end
+card power1 power start
+    l = 1
+end
+card power2 power  start
+    l = 2
+end
+card power3 power  start
+    l = 3
+end
+card power4 power  start
+    l = 4
+end
+card power5 power  start
+    l = 5
+end
+
+card event start end
+card fire event start end
+card leak event start end
+card systemFailure event start end
+
+card roomMarker start end
+card enginesMarker roomMarker start end
+card bridgeMarker roomMarker start end
+card torpedoRoomMarker roomMarker start end
+
+card person start end
+card Mark person start end
+card Sarah person start end
+card Anush person start end
+card Tracy person start end

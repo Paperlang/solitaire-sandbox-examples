@@ -1,0 +1,57 @@
+game SubPanic start
+
+    #use "cards"
+
+    visiblestack powerstack
+    visiblestack depletedpowerstack
+
+
+    visiblestack engines
+    visiblestack bridge
+    visiblestack torpedos
+
+    visiblestack incoming
+
+    visiblestack hand
+
+    visiblestack discard
+    
+    place power0 -> powerstack 1
+    place power1 -> powerstack 1
+    place power2 -> powerstack 1
+    place power3 -> powerstack 1
+    place power4 -> powerstack 1
+    place power5 -> powerstack 1
+
+    setup start
+        place Mark -> hand 1
+        place Sarah -> hand 1
+        place Anush -> hand 1
+        place Tracy -> hand 1
+    end
+
+    turn start
+         
+        if incoming.size == 0 start
+            random event -> incoming 1
+        end
+        depletedpowerstack -> powerstack top 1
+        auto incoming -> engines,bridge,torpedos top 1 where to{to.size < 1}
+
+        pickone start
+            pick choose hand -> engines,bridge,torpedos 1 where to{to.size == 1} then
+            pick powerstack -> depletedpowerstack top 1 then
+                engines,bridge,torpedos -> discard top all where from{from.size == 1}
+        end
+    end
+end
+
+; BUGS:
+; if we catch a VMError, just stop running turns and wait for a recompile. 
+; ALWAYS CATCH VMErrors
+
+; NEW REQUIREMENTS
+; need to be able to SKIP a random (OR ANY!) stack transfer
+; DISPLAY ERRORS PROPERLY WITH LINE & CHARACTER NUMBERS
+; Need to be able to compile project from design mode
+; need an option to end the turn manually (endturn keyword)
