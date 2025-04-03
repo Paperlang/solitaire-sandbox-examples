@@ -1,0 +1,109 @@
+card number start int v int suit end
+
+card aceH number start v = 1 suit = 1 end
+card twoH number start v = 2 suit = 1 end
+card threeH number start v = 3 suit = 1 end
+card fourH number start v = 4 suit = 1 end
+card fiveH number start v = 5 suit = 1 end
+card sixH number start v = 6 suit = 1 end
+card sevenH number start v = 7 suit = 1 end
+card eightH number start v = 8 suit = 1 end
+card nineH number start v = 9 suit = 1 end
+card tenH number start v = 10 suit = 1 end
+card jackH number start v = 11 suit = 1 end
+card queenH number start v = 12 suit = 1 end
+card kingH number start v = 13 suit = 1 end
+card aceD number start v = 1 suit = 2 end
+card twoD number start v = 2 suit = 2 end
+card threeD number start v = 3 suit = 2 end
+card fourD number start v = 4 suit = 2 end
+card fiveD number start v = 5 suit = 2 end
+card sixD number start v = 6 suit = 2 end
+card sevenD number start v = 7 suit = 2 end
+card eightD number start v = 8 suit = 2 end
+card nineD number start v = 9 suit = 2 end
+card tenD number start v = 10 suit = 2 end
+card jackD number start v = 11 suit = 2 end
+card queenD number start v = 12 suit = 2 end
+card kingD number start v = 13 suit = 2 end
+card aceC number start v = 1 suit = 3 end
+card twoC number start v = 2 suit = 3 end
+card threeC number start v = 3 suit = 3 end
+card fourC number start v = 4 suit = 3 end
+card fiveC number start v = 5 suit = 3 end
+card sixC number start v = 6 suit = 3 end
+card sevenC number start v = 7 suit = 3 end
+card eightC number start v = 8 suit = 3 end
+card nineC number start v = 9 suit = 3 end
+card tenC number start v = 10 suit = 3 end
+card jackC number start v = 11 suit = 3 end
+card queenC number start v = 12 suit = 3 end
+card kingC number start v = 13 suit = 3 end
+card aceS number start v = 1 suit = 4 end
+card twoS number start v = 2 suit = 4 end
+card threeS number start v = 3 suit = 4 end
+card fourS number start v = 4 suit = 4 end
+card fiveS number start v = 5 suit = 4 end
+card sixS number start v = 6 suit = 4 end
+card sevenS number start v = 7 suit = 4 end
+card eightS number start v = 8 suit = 4 end
+card nineS number start v = 9 suit = 4 end
+card tenS number start v = 10 suit = 4 end
+card jackS number start v = 11 suit = 4 end
+card queenS number start v = 12 suit = 4 end
+card kingS number start v = 13 suit = 4 end
+
+hiddenstack deck
+
+place aceH -> deck 1
+place aceD -> deck 1
+place aceC -> deck 1
+place aceS -> deck 1
+place twoH -> deck 1
+place twoD -> deck 1
+place twoC -> deck 1
+place twoS -> deck 1
+place threeH -> deck 1
+place threeD -> deck 1
+place threeC -> deck 1
+place threeS -> deck 1
+place fourH -> deck 1
+place fourD -> deck 1
+place fourC -> deck 1
+place fourS -> deck 1
+place fiveH -> deck 1
+place fiveD -> deck 1
+place fiveC -> deck 1
+place fiveS -> deck 1
+place sixH -> deck 1
+place sixD -> deck 1
+place sixC -> deck 1
+place sixS -> deck 1
+place sevenH -> deck 1
+place sevenD -> deck 1
+place sevenC -> deck 1
+place sevenS -> deck 1
+place eightH -> deck 1
+place eightD -> deck 1
+place eightC -> deck 1
+place eightS -> deck 1
+place nineH -> deck 1
+place nineD -> deck 1
+place nineC -> deck 1
+place nineS -> deck 1
+place tenH -> deck 1
+place tenD -> deck 1
+place tenC -> deck 1
+place tenS -> deck 1
+place jackH -> deck 1
+place jackD -> deck 1
+place jackC -> deck 1
+place jackS -> deck 1
+place queenH -> deck 1
+place queenD -> deck 1
+place queenC -> deck 1
+place queenS -> deck 1
+place kingH -> deck 1
+place kingD -> deck 1
+place kingC -> deck 1
+place kingS -> deck 1
